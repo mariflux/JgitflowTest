@@ -1,0 +1,9 @@
+/target/
+/.settings/
+/.classpath
+/.project
+/.checkstyle
+/.eclipse-pmd
+/dependency-reduced-pom.xml
+/bin/
+/opaw-ciops-main (1).iml
