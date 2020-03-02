@@ -5,6 +5,20 @@
     <groupId>org.example</groupId>
     <artifactId>Jgit</artifactId>
     <version>1.1-SNAPSHOT</version>
+    <distributionManagement>
+        <repository>
+            <id>internal</id>
+            <name>internal</name>
+            <url>
+                file:\\192.168.1.250\martyna.florian\
+
+            </url>
+        </repository>
+
+
+    </distributionManagement>
+
+
     <build>
         <resources>
             <resource>
