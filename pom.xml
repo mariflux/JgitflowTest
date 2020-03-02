@@ -14,7 +14,7 @@
             <id>internal</id>
             <name>internal</name>
             <url>
-                dav:https://github.com/mariflux/
+                https://github.com/mariflux/
             </url>
         </repository>
 
