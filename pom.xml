@@ -4,9 +4,49 @@
 
     <groupId>org.example</groupId>
     <artifactId>Jgit</artifactId>
+    <version>1.1</version>
 
-    <version>1.2-SNAPSHOT</version>
+
+    <repositories>
+        <repository>
+            <id>internal</id>
+            <url>
+                https://github.com/mariflux/
+            </url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>internal</id>
+            <name>internal</name>
+            <url>
+                file:\\192.168.1.250\martyna.florian\
+
+            </url>
+        </repository>
+
+
+    </distributionManagement>
+
+
+
+
+
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
     <pluginManagement>
     <plugins>
         <plugin>
@@ -51,17 +91,14 @@
             <artifactId>maven-compiler-plugin</artifactId>
             <version>3.6.2</version>
         </plugin>
-        <plugin>
+    <!--    <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-javadoc-plugin</artifactId>
             <version>2.10.4</version>
             <configuration>
-                <use>false</use>
-                <links>
-                    <link>http://java.sun.com/javase/6/docs/api/</link>
-                </links>
+                <failOnError>false</failOnError>
             </configuration>
-        </plugin>
+        </plugin>-->
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-jar-plugin</artifactId>
@@ -72,6 +109,10 @@
                         <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                         <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
                     </manifest>
+                    <manifestEntries>
+                        <Build-Timestamp>${maven.build.timestamp}</Build-Timestamp>
+                        <Description>${project.description}</Description>
+                    </manifestEntries>
                 </archive>
             </configuration>
         </plugin>
