@@ -1,0 +1,22 @@
+-encoding
+'Cp1250'
+-protected
+-sourcepath
+'C:/Users/teeno/git/JgitflowTest/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2020. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/teeno/git/JgitflowTest/target/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Jgit 1.1 API'
+-linkoffline
+'http://docs.oracle.com/javase/8/docs/api' 'C:/Users/teeno/git/JgitflowTest/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'Jgit 1.1 API'
