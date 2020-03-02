@@ -14,9 +14,10 @@
 'UTF-8'
 -doctitle
 'Jgit 1.1 API'
+-link
+'http://java.sun.com/javase/6/docs/api'
 -linkoffline
 'http://docs.oracle.com/javase/8/docs/api' 'C:/Users/teeno/git/JgitflowTest/target/javadoc-bundle-options'
--use
 -version
 -windowtitle
 'Jgit 1.1 API'

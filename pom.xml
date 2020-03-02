@@ -54,12 +54,6 @@
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-javadoc-plugin</artifactId>
             <version>2.10.4</version>
-            <configuration>
-                <use>false</use>
-                <links>
-                    <link>http://java.sun.com/javase/6/docs/api/</link>
-                </links>
-            </configuration>
         </plugin>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
@@ -71,6 +65,10 @@
                         <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                         <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
                     </manifest>
+                    <manifestEntries>
+                        <Build-Timestamp>${maven.build.timestamp}</Build-Timestamp>
+                        <Description>${project.description}</Description>
+                    </manifestEntries>
                 </archive>
             </configuration>
         </plugin>
