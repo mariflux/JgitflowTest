@@ -28,9 +28,9 @@
                 <hotfixBranchPrefix>hotfix-</hotfixBranchPrefix>
                 <versionTagPrefix>${project.artifactId}-</versionTagPrefix>
             </flowInitContext>
-            <scmCommentPrefix>[ZI-2765]: </scmCommentPrefix>
-            <username>${git.user}</username>
-            <password>${git.password}</password>
+            <scmCommentPrefix>[ReLEASE]: </scmCommentPrefix>
+            <username>mariflux</username>
+            <password>M@rtynka69</password>
         </configuration>
     </plugin>
     </plugins>
