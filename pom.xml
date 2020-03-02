@@ -6,7 +6,7 @@
     <artifactId>Jgit</artifactId>
     <version>1.1</version>
 
-
+<!--
     <repositories>
         <repository>
             <id>internal</id>
@@ -35,7 +35,7 @@
 
 
     </distributionManagement>
-
+-->
 
 
     <build>
