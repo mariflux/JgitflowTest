@@ -83,8 +83,8 @@
                 <versionTagPrefix>${project.artifactId}-</versionTagPrefix>
             </flowInitContext>
             <scmCommentPrefix>[ReLEASE]: </scmCommentPrefix>
-            <username>mariflux</username>
-            <password>M@rtynka69</password>
+            <username>${git.user}</username>
+            <password>${git.pass}</password>
         </configuration>
     </plugin>
         <plugin>
